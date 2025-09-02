@@ -1,0 +1,68 @@
+.riddle {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    color: var(--text);
+  }
+  
+  .riddle-card {
+    width: 420px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+  }
+  
+  .riddle-title {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .riddle-meta {
+    margin-bottom: 12px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  
+  .riddle-task {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+  }
+  
+  .riddle-form {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .riddle-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+  }
+  
+  .riddle-form input::placeholder {
+    color: var(--muted);
+  }
+  
+  .riddle-form button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--primary);
+    color: #0b0b0b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: filter 0.2s;
+  }
+  
+  .riddle-form button:hover {
+    filter: brightness(1.1);
+  }
+  
