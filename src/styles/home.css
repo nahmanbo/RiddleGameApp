@@ -1,0 +1,90 @@
+.home {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background:
+      radial-gradient(1100px circle at 50% 20%,
+        rgba(34,211,238,.12), transparent 42%)
+      , var(--bg);
+  }
+  
+  .home-card {
+    width: min(720px, 94vw);
+    text-align: center;
+    padding: 56px 28px 40px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  
+  .home-title {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 12px;
+    letter-spacing: .3px;
+  }
+  
+  .home-subtitle {
+    color: var(--muted);
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    margin-bottom: 28px;
+  }
+  
+  .home-actions {
+    display: inline-flex;
+    gap: 12px;
+    margin: 8px 0 20px;
+  }
+  
+  .btn {
+    appearance: none;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+  }
+  .btn:hover { box-shadow: 0 0 0 3px var(--hover); }
+  .btn:active { transform: scale(.98); }
+  
+
+  .home-links {
+    margin-top: 4px;
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .home-link {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .home-link:hover { text-decoration: underline; }
+  .dot { opacity: .6; }
+  
+  .home-version {
+    display: block;
+    margin-top: 16px;
+    color: var(--muted);
+    letter-spacing: .12em;
+  }
+  
+  /* מובייל */
+  @media (max-width: 420px) {
+    .home-actions { flex-wrap: wrap; }
+    .btn { flex: 1 1 42%; }
+  }
+  
