@@ -10,8 +10,7 @@ export default function Home() {
 
         <div className="home-actions">
           <Link to="/play" className="btn">Play as Guest</Link>
-          <Link to="/auth?tab=login" className="btn">Login</Link>
-          <Link to="/auth?tab=register" className="btn">Register</Link>
+          
         </div>
 
         {/* קיצור לעמוד המובילים */}
