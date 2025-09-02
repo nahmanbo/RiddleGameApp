@@ -10,12 +10,7 @@ export default function Home() {
 
         <div className="home-actions">
           <Link to="/play" className="btn">Play as Guest</Link>
-          
-        </div>
-
-        {/* קיצור לעמוד המובילים */}
-        <div className="home-leaderboard">
-          <Link to="/leaderboard" className="btn btn-outline">🏆 View Leaderboard</Link>
+          <Link to="/leaderboard" className="btn">🏆 View Leaderboard</Link>
         </div>
 
         <small className="home-version">v1.0</small>

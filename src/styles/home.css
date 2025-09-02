@@ -34,7 +34,8 @@
   }
   
   .home-actions {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     gap: 12px;
     margin: 8px 0 20px;
   }
@@ -60,31 +61,4 @@
   .btn:active { transform: scale(.98); }
   
 
-  .home-links {
-    margin-top: 4px;
-    color: var(--muted);
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .home-link {
-    color: var(--muted);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .home-link:hover { text-decoration: underline; }
-  .dot { opacity: .6; }
-  
-  .home-version {
-    display: block;
-    margin-top: 16px;
-    color: var(--muted);
-    letter-spacing: .12em;
-  }
-  
-  /* מובייל */
-  @media (max-width: 420px) {
-    .home-actions { flex-wrap: wrap; }
-    .btn { flex: 1 1 42%; }
-  }
   

@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router";
 import Home from "./pages/HomePage";
-import Login from "./pages/LoginPage";
+import Auth from "./pages/AuthPage";
 import Play from "./pages/PlayPage";
 import Crud from "./pages/CrudPage";
 import Leaderboard from "./pages/LeaderboardPage";
@@ -11,7 +11,7 @@ import Title from "./components/Title";
 import { useNavLinks } from "./hooks/useNavLinks";
 
 export default function App() {
-  const links = useNavLinks(); // בטוח עכשיו — App כבר עטוף ב־Router
+  const links = useNavLinks(); 
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/auth" element={<Auth />} /> 
         <Route path="/play" element={<Play />} />
         <Route path="/crud" element={<Crud />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
