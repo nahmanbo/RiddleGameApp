@@ -5,7 +5,7 @@
     justify-content: center; 
     padding: 24px;
     background: radial-gradient(1100px circle at 50% 20%, rgba(34,211,238,.12), transparent 42%), var(--bg);
-  }
+}
   
 .home-card {
     width: min(720px, 94vw);
@@ -15,7 +15,7 @@
     border: 1px solid var(--border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-  }
+}
   
 .home-title {
     font-size: 3rem; 
@@ -23,20 +23,20 @@
     color: var(--text);
     margin-bottom: 12px;
     letter-spacing: .3px;
-  }
+}
   
 .home-subtitle {
     color: var(--muted);
     font-size: 1.2rem; 
     margin-bottom: 28px;
-  }
+}
   
 .home-actions {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin: 8px 0 20px;
-  }
+}
   
 .btn {
     appearance: none;
@@ -51,12 +51,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .btn:hover {
+.btn:hover {
     box-shadow: 0 0 0 3px var(--hover);
-  }
+}
   
-  .btn:active {
+.btn:active {
     transform: scale(.98);
-  }
+}
