@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import "../styles/home.css";
 
+// Renders the home page with a welcome message and navigation options.
 export default function Home() {
   return (
     <main className="home">
