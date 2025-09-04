@@ -1,0 +1,64 @@
+.play {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 24px;
+    background: radial-gradient(1100px circle at 50% 20%, rgba(34,211,238,.12), transparent 42%), var(--bg);
+}
+  
+.play-card {
+    width: 94vw;
+    text-align: center;
+    padding: 56px 28px 40px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+  
+.play-title {
+    font-size: 3rem; 
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 12px;
+    letter-spacing: .3px;
+}
+  
+.play-subtitle {
+    color: var(--muted);
+    font-size: 1.2rem; 
+    margin-bottom: 28px;
+}
+  
+.play-actions {
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 8px 0 20px;
+}
+  
+.difficulty-btn {
+    height: 120px;
+    width: 120px;
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.difficulty-btn:hover {
+    box-shadow: 0 0 0 3px var(--hover);
+}
+  
+.difficulty-btn:active {
+    transform: scale(.98);
+}
