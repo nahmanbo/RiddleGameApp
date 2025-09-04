@@ -1,5 +1,5 @@
 import { useRiddles } from "../context/RiddlesContext";
-import { fetchRiddles } from "../services/riddleAPI";
+import { fetchRiddles } from "../services/riddleAPI1";
 import "../styles/play.css";
 
 // Page to display and load riddles
