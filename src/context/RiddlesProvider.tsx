@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { RiddlesContext, type Riddle } from "./RiddlesContext";
+import type { Riddle } from "../types/riddle";
+import { RiddlesContext } from "./RiddlesContext";
 
 // Provides riddles context to the app
 export default function RiddlesProvider({ children }: { children: React.ReactNode }) {

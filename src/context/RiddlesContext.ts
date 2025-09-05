@@ -1,12 +1,6 @@
 import { createContext, useContext } from "react";
+import type { Riddle } from "../types/riddle";
 
-export type Riddle = {
-  id: number;
-  subject: string;
-  difficulty: string;
-  taskDescription: string;
-  correctAnswer: string;
-};
 
 export type RiddlesContextType = {
   riddles: Riddle[];
