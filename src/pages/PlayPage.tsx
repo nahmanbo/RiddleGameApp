@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import RiddleCard from "../components/RiddleCard";
 import { useRiddles } from "../context/RiddlesContext";
-import { fetchRiddles } from "../services/riddleAPI1";
+import { fetchRiddlesByDifficulty } from "../services/riddleAPI1";
 import "../styles/play.css";
 
 export default function PlayPage() {
@@ -12,7 +12,7 @@ export default function PlayPage() {
 
   const load = async (difficulty: string) => {
     try {
-      const data = await fetchRiddles(difficulty);
+      const data = await fetchRiddlesByDifficulty(difficulty);
       setRiddles(data);
       setShowButtons(false);
     } catch (err) {

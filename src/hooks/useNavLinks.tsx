@@ -19,6 +19,7 @@ export function useNavLinks(): NavItem[] {
   if (pathname.startsWith("/play")) {
     return [
       { to: "/", label: "Home" },
+      { to: "/crud", label: "Crud" },
       { to: "/leaderboard", label: "Leaderboard" },
     ];
   }
